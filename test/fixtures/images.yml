@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  file: MyString
+  name: MyString
+  team: MyString
+  goals: 1
+  assists: 1
+  ave_value: 1.5
+  theme_id: 1
+
+two:
+  file: MyString
+  name: MyString
+  team: MyString
+  goals: 1
+  assists: 1
+  ave_value: 1.5
+  theme_id: 1

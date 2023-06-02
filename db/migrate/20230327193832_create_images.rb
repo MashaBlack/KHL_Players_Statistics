@@ -8,8 +8,13 @@ class CreateImages < ActiveRecord::Migration[7.0]
       t.integer :assists
       t.float :ave_value
       t.integer :theme_id
-
-      t.timestamps
+      t.datetime "created_at", null: false
+      t.datetime "updated_at", null: false
     end
   end
 end
+
+class Image < ApplicationRecord
+  belongs_to :theme
+end
+

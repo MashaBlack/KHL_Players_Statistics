@@ -9,8 +9,8 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# # Use sqlite3 as the database for Active Record
+# gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -70,3 +70,48 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "haml-rails", "~> 2.0"
+
+
+# Use jquery as the JavaScript library
+gem 'jquery-ui-rails'
+gem 'jquery-rails'
+gem 'rails-asset-jqueryui'
+
+# Use SАSS for stylesheets
+gem 'sass-rails'
+
+# Icons fonts
+gem 'font-awesome-sass'
+gem 'font-awesome-rails'
+
+# gem 'bootstrap', '~> 5.3.0.alpha3'
+
+# bootstrap
+gem 'bootstrap-sass'
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platform: :mri
+  # Лучше отображает ошибки
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
+# Pagination
+gem 'will_paginate'
+gem 'kaminari'
+
+# Use postgresql as the database for Active Record
+gem 'pg'
+# , '~> 0.18' - явное указание на версию gem 'activerecord-reset-pk-sequence'
+# Use ActiveModel has_secure_password
+gem 'bcrypt'
+gem 'active_model_serializers'
+gem 'activerecord-reset-pk-sequence'
+
+
+# gem 'slim-rails'
+# gem 'html2slim'
+

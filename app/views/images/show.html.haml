@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b File:
+  = @image.file
+%p
+  %b Name:
+  = @image.name
+%p
+  %b Team:
+  = @image.team
+%p
+  %b Goals:
+  = @image.goals
+%p
+  %b Assists:
+  = @image.assists
+%p
+  %b Ave value:
+  = @image.ave_value
+%p
+  %b Theme:
+  = @image.theme_id
+
+= link_to 'Edit', edit_image_path(@image)
+\|
+= link_to 'Back', images_path
